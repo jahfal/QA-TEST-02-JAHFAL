@@ -1,4 +1,3 @@
-require ('cypress-xpath');
 import visitwebsite from "../integration/visitURL";
 import addTaskClass from "../integration/addTask";
 import verifyMarkedClass from "../integration/verifyMarked";
