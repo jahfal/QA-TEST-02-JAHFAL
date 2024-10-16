@@ -26,12 +26,8 @@ describe('ToDo MVC', () => {
     })
 
     it("Delete task and Verify that the task is removed from the list.", () => {
-        // Add tasks
         addedTask.addTask();
-    
-        // Delete the second task with force
         cy.xpath("//li[2]//div[1]//button[1]").click({ force: true })
-    
         cy.xpath("//main[@class='main']//li").should('have.length', 2)
     })
 
