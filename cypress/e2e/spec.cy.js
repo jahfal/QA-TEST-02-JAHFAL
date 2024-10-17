@@ -27,7 +27,7 @@ describe("ToDo MVC", () => {
     cy.xpath("//li[2]//div[1]//button[1]").click({ force: true });
     cy.xpath("//main[@class='main']//li").should("have.length", 2);
   });
-  it.only("MVC-05 Filter task", () => {
+  it("MVC-05 Filter task", () => {
     addedTask.addTask();
     cy.xpath("//li[1]//div[1]//input[1]").click();
     cy.xpath("//a[normalize-space()='Active']").click();
